@@ -1,0 +1,651 @@
+@font-face {
+  font-family: Vagkalin;
+  src: url(./font/font/VAGRoundedBT.ttf);
+}
+@font-face {
+  font-family: Vagince;
+  src: url(./font/font/Vag.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: normal;
+}
+body {
+  font-size: 18px;
+  font-family: Vagince;
+  line-height: normal;
+}
+.kurumsalBaslik {
+  height: 215px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #06514d;
+}
+
+.kurumsalBaslik > .container {
+  height: 100%;
+  position: relative;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+  --bs-gutter-x: 0 !important;
+}
+
+@media (max-width: 1199.98px) {
+  .kurumsalBaslik {
+    height: 150px;
+  }
+}
+@media (max-width: 991.98px) {
+  .kurumsalBaslik {
+    height: 150px;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 85% !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 70% !important;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1280px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 14.5px;
+  }
+}
+@media only screen and (min-width: 0) {
+  html {
+    font-size: 14px;
+  }
+}
+.anasayfaKurumsal {
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-align: left;
+  position: absolute;
+  left: 15px;
+  top: 30px;
+}
+.anasayfaKurumsal > li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+  position: relative;
+}
+.anasayfaKurumsal > li + li:before {
+  vertical-align: top;
+  color: white;
+  content: "-";
+  font-family: Vagince !important;
+}
+.anasayfaKurumsal li a {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Vagince !important;
+}
+.baslik {
+  margin: 0px;
+  color: white;
+  font-size: 50px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: Vagince !important;
+}
+.baslik h1 {
+  list-style: normal;
+  font-weight: 400;
+}
+.baslik:after {
+  width: 100%;
+  color: #06514d;
+  font-size: 120px;
+  line-height: 120px;
+  font-family: Vagkalin;
+  position: absolute;
+  left: 0;
+  top: -30px;
+  z-index: -1;
+  content: attr(data-headline);
+  -webkit-text-stroke: 1px #05423f;
+  -webkit-text-fill-color: #06514d;
+}
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+.hakkimizda {
+  max-width: 1670px;
+  min-height: 500px;
+  margin: 0 auto;
+  color: white;
+  background-color: #d98833;
+}
+.icerik {
+  margin: 0 auto;
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+  overflow: hidden;
+  clear: both;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 993px) {
+  .icerik {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .icerik {
+    width: 85%;
+  }
+}
+.hakkimizda .özetkutusu {
+  max-width: 58%;
+}
+.hakkimizda .özetresim {
+  max-width: 33%;
+  display: inline-block;
+}
+.hakkimizda .özetkutusu p {
+  margin: 0;
+  font-size: 20px;
+  text-align: justify;
+  font-family: Vagince !important;
+  line-height: normal;
+}
+.hakkimizda .baslik2 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-family: Vagkalin !important;
+  font-weight: 400;
+}
+
+.uzunyazi {
+  padding-bottom: 30px;
+  padding-top: 70px;
+}
+.uzunyazi .yazilar {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #06514d;
+  font-family: Vagkalin !important;
+  font-weight: 400;
+}
+.uzunyazi p {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  font-family: Vagince !important;
+}
+.uzunyazi p span {
+  color: #dd8c33;
+  font-weight: 600;
+}
+.kahve {
+  margin-top: 26px !important;
+}
+
+.dortlukutu {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+.dortlukutu > .solust {
+  background-color: #06514d !important;
+  padding: 50px;
+}
+
+.dortlukutu > li {
+  width: calc(50% - 15px);
+  min-height: 322px;
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 0px;
+  color: white;
+  vertical-align: top;
+}
+.dortlukutu > li h2 {
+  display: inline-block;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  font-size: 28px;
+  font-family: Vagkalin !important;
+  position: relative;
+  font-weight: 500;
+}
+
+.dortlukutu > li h2:before {
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: white;
+  content: "";
+}
+.dortlukutu > li p {
+  margin: 0;
+  line-height: 26px;
+  text-align: justify;
+  font-family: Vagince !important;
+  font-size: 18px;
+}
+
+.dortlukutu > .sagalt {
+  background-color: #d98833 !important;
+  padding: 50px;
+}
+
+.dortlukutu > .sagalt > h2 {
+  display: inline-block;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  font-size: 28px;
+  font-family: Vagkalin !important;
+  position: relative;
+  font-weight: 500;
+}
+.dortlukutu > .sagalt h2:before {
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: white;
+  content: "";
+}
+
+.section-bottom {
+  max-width: 1466px;
+  min-height: 391px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  background-image: url(https://www.kahvediyari.com.tr/images/bottom.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 70%;
+  }
+}
+.section-bottom .headline {
+  margin-top: 130px;
+  margin-bottom: 20px;
+  color: #00524d;
+  font-size: 50px;
+  line-height: 50px;
+  font-family: Vagkalin !important;
+  font-weight: 400px !important;
+}
+.section-bottom .summary {
+  margin: 0;
+  color: #00524d;
+  font-size: 20px;
+  font-family: Vagince !important;
+  font-weight: 400px !important;
+}
+.section-bottom .summary > strong {
+  display: block;
+  font-family: Vagkalin !important;
+  font-weight: 500 !important;
+}
+.clear-both {
+  clear: both;
+}
+/* ----------navbar css baslangic----------- */
+.navbarr {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  height: 145px;
+  padding: 0 10px;
+}
+
+.navbarr ul {
+  list-style-type: none;
+  padding-top: 20px;
+}
+
+.menü-yazi {
+  font-weight: 500 !important;
+  font-size: 30px !important;
+  font-family: Vagince !important;
+  /* margin-right: 20px; */
+}
+
+.hamburger {
+  font-size: 30px;
+  color: #06514d;
+}
+
+.navbarr a {
+  text-decoration: none;
+  color: #06514d !important;
+  font-size: 18px;
+  font-weight: 100 !important;
+  font-family: Vagince !important;
+}
+.navbarr .menu {
+  font-family: Vagkalin !important;
+}
+.logo_alan {
+  flex-basis: 40%;
+}
+
+.navbar-sol {
+  flex-basis: 70%;
+}
+
+.navbar-sag {
+  width: 40%;
+  padding-right: 20px;
+}
+/* ----------navbar css bitis---------- */
+/* ----------form baslangic---------- */
+.yazi {
+  font-family: Vag_ince, serif;
+  color: #06514d !important;
+  background-color: #f0efeb !important;
+  padding: 60px 40px 40px 60px;
+}
+.yazi1 {
+  font-size: 34px;
+  background-color: #f0efeb;
+  font-family: Vag, serif !important;
+}
+.yazi2 {
+  color: #d98833 !important;
+  background-color: #f0efeb;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.form1 {
+  border-bottom: 1px solid #06514d;
+  color: #06514d;
+}
+#alanyazi {
+  font-family: Vag_ince !important;
+  padding: 10px 10px;
+}
+.button {
+  background-color: #d98833 !important;
+
+  border: none;
+
+  color: white;
+
+  padding: 10px 20px;
+
+  text-decoration: none;
+
+  display: inline-block;
+  margin: 4px 2px;
+  font-size: 20px;
+
+  width: 120px;
+  height: 50px;
+  text-align: center !important;
+  line-height: 20px;
+
+  font-family: Vag, serif;
+
+  cursor: pointer;
+}
+
+.form-control::-moz-placeholder {
+  color: #f0efeb !important;
+  opacity: 1;
+  font-weight: lighter !important;
+  font-size: 14.5px !important;
+  font-family: Vag_ince !important;
+}
+.form-control::placeholder {
+  background-color: #f0efeb;
+  opacity: 1;
+  font-weight: lighter !important;
+  font-size: 14.5px !important;
+  font-family: Vag_ince !important;
+}
+input {
+  border: none !important;
+  border-bottom: 1px solid #06514d !important;
+}
+input:focus {
+  box-shadow: none !important;
+}
+
+.form-underline form {
+  border-bottom: 1px solid #f0efeb;
+}
+.carousel {
+  background-color: #f0efeb;
+}
+.carousel-item img {
+  width: 350px !important;
+  height: 350px !important;
+}
+.form-controller {
+  margin: 0 auto;
+}
+.section_bottom {
+  max-width: 1466px;
+  min-height: 391px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  background-image: url(/images/bottom.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/* ----------form bitis---------- */
+
+/* ----------footer css baslangıc---------- */
+.footerr {
+  background-color: #00524d;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+.footerr ul {
+  list-style-type: none;
+  padding-top: 20px;
+  padding-left: 0;
+}
+
+.footerr li a {
+  color: white !important;
+  margin-bottom: 10px;
+}
+
+.footerr a {
+  text-decoration: none;
+  color: #06514d;
+  font-size: 18px;
+  font-weight: 100;
+  font-family: Vagince !important;
+}
+
+.footerr h3 {
+  font-family: Vagkalin !important;
+  font-weight: 400;
+  color: white;
+}
+
+.sosyalmedya {
+  width: 57px;
+  height: 57px;
+  display: inline-block;
+  overflow: hidden;
+  color: white;
+  font-size: 27px;
+  line-height: 55px;
+  margin: 5px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.adres {
+  flex-direction: row;
+  justify-content: start !important;
+  align-items: end !important;
+  color: white;
+  font-family: Vagince !important;
+  font-size: 18px;
+}
+
+.numara {
+  justify-content: left;
+  font-family: Vag !important;
+  font-weight: 900 !important;
+  color: white !important;
+  font-family: Vagince !important;
+}
+
+.sol {
+  width: 405px;
+  margin-left: 30px;
+}
+
+.link-btn {
+  display: flex !important;
+  height: 60px;
+  padding: 15px 65px;
+  color: white !important;
+  font-size: 25px;
+  font-family: Vagince !important;
+  font-weight: 1000;
+  font: bold;
+  background-color: #dd8c33;
+  justify-content: left !important;
+}
+
+.beyazalan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 30px;
+  align-items: center;
+  height: 120px;
+}
+
+.beyazalan p span {
+  color: #06514d;
+}
+
+.orta {
+  display: flex;
+  justify-content: left !important;
+  font-family: Vagince !important;
+  font-weight: 1000;
+  color: white;
+  font-size: 25px;
+  margin: 25px;
+
+  margin-top: -21px;
+}
+h3 {
+  margin-top: 50px;
+  font-family: Vagkalin !important;
+  font-weight: 400;
+}
+
+.orta h3:hover {
+  color: #dd8c33 !important;
+}
+
+.orta a {
+  display: flex;
+  justify-content: left;
+  margin: 6px;
+}
+
+.orta ul li a:hover {
+  color: #dd8c33 !important;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 15px;
+  padding: 15px;
+}
+
+.sag {
+  justify-content: left !important;
+  font-family: Vagince !important;
+  font-weight: 1000;
+  color: white;
+  font-size: 20px;
+  margin-top: -13px !important;
+}
+.yakinda {
+  color: #dd8c33;
+  font-weight: bold;
+  font-family: Vagince !important;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.sag .no {
+  text-align: center;
+  margin-top: 80px;
+}
+.sag h3 {
+  margin-bottom: 30px;
+  text-align: right;
+  font-family: Vagkalin !important;
+  font-weight: 400;
+}
+.orta .bayi {
+  font-family: Vagkalin !important;
+  font-weight: 400;
+}
+.sol .yazi {
+  font-family: Vagince !important;
+  font-weight: 400;
+  background-color: #06514d !important;
+  color: white !important;
+  padding: 0 0 10px 0 !important;
+}
+.logo {
+  margin: 5px;
+}
+/* ----------footer css bitis---------- */

@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Vag, serif;
+}
+
+@font-face {
+  font-family: "Vag";
+  src: url("./fonts/subset-Vag.woff2") format("woff2"),
+    url("./fonts/subset-Vag.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "VAGRounded BT";
+  src: url("./fonts/subset-VAGRoundedBT.woff2") format("woff2"),
+    url("./fonts/subset-VAGRoundedBT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.navbarr {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  height: 145px;
+  padding: 0 40px;
+}
+
+.navbarr ul {
+  list-style-type: none;
+  padding-top: 20px;
+}
+
+.menü-yazi {
+  font-weight: 500 !important;
+  font-size: 30px !important;
+  font-family: Vag !important;
+  /* margin-right: 20px; */
+}
+
+.hamburger {
+  font-size: 30px;
+  color: #06514d;
+}
+
+.navbarr a {
+  text-decoration: none;
+  color: #06514d !important;
+  font-size: 18px;
+  font-weight: 100 !important;
+  font-family: VagLight;
+}
+
+.logo_alan {
+  flex-basis: 40%;
+}
+
+.navbar-sol {
+  flex-basis: 70%;
+}
+
+.navbar-sag {
+  width: 40%;
+  padding-right: 20px;
+}
+
+@font-face {
+  font-family: Vag;
+
+  src: url("./font/VAGRoundedBT.ttf");
+}
+
+@font-face {
+  font-family: VagLight;
+
+  src: url("./font/Vag.ttf");
+}
