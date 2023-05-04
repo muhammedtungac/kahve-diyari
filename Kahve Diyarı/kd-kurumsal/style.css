@@ -342,6 +342,17 @@ body {
   padding-top: 20px;
 }
 
+.navbarr a {
+  text-decoration: none;
+  color: #06514d !important;
+  font-size: 18px;
+  font-weight: 100 !important;
+  font-family: Vagince !important;
+}
+.navbarr .menu {
+  font-family: Vagkalin !important;
+}
+
 .menü-yazi {
   font-weight: 500 !important;
   font-size: 30px !important;
@@ -354,16 +365,6 @@ body {
   color: #06514d;
 }
 
-.navbarr a {
-  text-decoration: none;
-  color: #06514d !important;
-  font-size: 18px;
-  font-weight: 100 !important;
-  font-family: Vagince !important;
-}
-.navbarr .menu {
-  font-family: Vagkalin !important;
-}
 .logo_alan {
   flex-basis: 40%;
 }
