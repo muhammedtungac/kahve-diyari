@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benim Diyarim</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"
+      integrity="sha512-uvXdJud8WaOlQFjlz9B15Yy2Au/bMAvz79F7Xa6OakCl2jvQPdHD0hb3dEqZRdSwG4/sknePXlE7GiarwA/9Wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR BAŞLANGIÇ -->
+    <!-- topNavbar -->
+    <div class="container-fluid container-topNavbar d-flex align-items-center">
+      <div
+        class="container d-flex flex-row justify-content-between align-items-center"
+      >
+        <div class="lang d-flex align-items-center justify-content-center">
+          <img
+            src="https://cdn.iconscout.com/icon/premium/png-512-thumb/turkey-flag-3847008-3195954.png?f=avif&w=256"
+            alt=""
+          />
+
+          <a href="">Türkçe</a>
+        </div>
+
+        <div
+          class="h-100 d-flex align-items-center justify-content-center gap-1"
+        >
+          <i class="fa-solid fa-truck"></i>
+          <strong> 200 TL ÜZERİ ALIŞVERİŞLERDE ÜCRETSİZ KARGO</strong>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="UyeGiris.html" style="color: black"
+                ><i class="fa-regular fa-user"></i> Üye Giriş /</a
+              >
+            </li>
+            <li><a href="uyeol.html">Üye Ol</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar2 -->
+
+    <header class="sticky-top">
+      <div class="container-fluid sticky-top">
+        <div class="container d-flex justify-content-between text-black">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="https://static.ticimax.cloud/43426/uploads/editoruploads/bdlogo-01.jpg"
+                alt="Logo"
+            /></a>
+          </div>
+          <nav>
+            <ul class="mx-2 p-4">
+              <li class="nav-item dropdown position-relative">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="kahveler.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Kahveler
+                </a>
+                <ul class="dropdown-menu position-absolute left-0">
+                  <li><a class="dropdown-item" href="#">Türk Kahvesi</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Filtre Kahve & Espresso</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="#">Çaylar</a></li>
+              <li><a href="#">Şuruplar</a></li>
+              <li><a href="#">Atıştırmalık</a></li>
+              <li><a href="#">Hediyelik</a></li>
+            </ul>
+          </nav>
+          <div class="search-cart">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- NAVBAR BİTİŞ -->
+    <section class="section-products">
+      <div class="container pageNavitor">
+        <nav aria-label="breadcrumb  ">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <i class="fa-solid fa-location-pin mx-2"></i
+              ><a href="#">Anasayfa</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Kahveler</li>
+          </ol>
+        </nav>
+
+        <div class="main-container col-12">
+          <div class="siralamamain col-10 d-flex justify-content-start">
+            <div class="siralama d-flex justify-content-start">
+              <select onchange="sortingClick(value)">
+                <option value="1" selected="selected">Sıralama Seçiniz</option>
+                <option value="2">Fiyata Göre (Artan)</option>
+                <option value="3">Fiyata Göre (Azalan)</option>
+                <option value="4">Ürün Adına Göre (A&gt;Z)</option>
+                <option value="5">Ürün Adına Göre (Z&lt;A)</option>
+              </select>
+            </div>
+            <div class="stoktakiler d-flex justify-content-end">
+              <input type="checkbox" class="mx-2 align-items-center" />
+              <p class="align-items-center">Stoktakiler</p>
+            </div>
+          </div>
+          <div class="urunbilgisi col-2">
+            <p>21 Ürün</p>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <!-- Product 1.1 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-1" class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%26 </span>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Türk Kahvesi 100 Gr</h3>
+                <h4 class="product-old-price">₺35.00</h4>
+                <h4 class="product-price">₺26.00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 1.2 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-2" class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%20 </span>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Dağ Çilekli Türk Kahvesi 100 Gr</h3>
+                <h4 class="product-old-price">₺35.00</h4>
+                <h4 class="product-price">₺28.00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 1.3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-3" class="single-product product-shadow">
+              <div class="part-1"><span class="discount">%30 </span></div>
+              <div class="part-2">
+                <h3 class="product-title">Damla Sakızlı Türk Kahvesi 100 Gr</h3>
+                <h4 class="product-old-price">₺40,00</h4>
+                <h4 class="product-price">₺28,00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 1.4 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%20 </span>
+                <img
+                  src="https://static.ticimax.cloud/43426/Uploads/UrunResimleri/thumb/gullu-lokumlu-turk-kahvesi-100-gr-ad2b-4.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Güllü Lokumlu Türk Kahvesi 100 Gr</h3>
+                <h4 class="product-old-price">₺35,00</h4>
+                <h4 class="product-price">₺28,00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2.1 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%26 </span>
+                <img
+                  src="https://static.ticimax.cloud/43426/Uploads/UrunResimleri/thumb/dibek-turk-kahvesi-100-gr-e-5a33.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Dibek Türk Kahvesi 100 Gr</h3>
+                <h4 class="product-old-price">₺35,00</h4>
+                <h4 class="product-price">₺26,00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2.2 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-2" class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%10</span>
+                <img
+                  src="https://static.ticimax.cloud/43426/uploads/urunresimleri/buyuk/dag-cilekli-turk-kahvesi-250-gr-2093b8.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Dağ Çilekli Türk Kahvesi 250 Gr</h3>
+                <h4 class="product-old-price">₺80,00</h4>
+                <h4 class="product-price">₺72,00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2.3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-3" class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%10</span>
+                <img
+                  src="https://static.ticimax.cloud/43426/uploads/urunresimleri/dibek-turk-kahvesi-250-gr-b4ec10.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+
+              <div class="part-2">
+                <h3 class="product-title">Dibek Türk Kahvesi 250 Gr</h3>
+                <h4 class="product-old-price">₺80,00</h4>
+                <h4 class="product-price">₺72,00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2.4 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-4" class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%10</span>
+                <img
+                  src="https://static.ticimax.cloud/43426/uploads/urunresimleri/buyuk/gullu-lokumlu-turk-kahvesi-250-gr-0060a3.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Güllü Lokumlu Türk Kahvesi 250 Gr</h3>
+                <h4 class="product-old-price">₺80,00</h4>
+                <h4 class="product-price">₺72,00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3.1 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%27 </span>
+                <img
+                  src="https://static.ticimax.cloud/43426/uploads/urunresimleri/buyuk/menengic-turk-kahvesi-250-gr-c7-b04.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Menengiç Türk Kahvesi 250 Gr</h3>
+                <h4 class="product-old-price">₺99,00</h4>
+                <h4 class="product-price">₺72,00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3.2 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-2" class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%8</span>
+                <img
+                  src="https://static.ticimax.cloud/43426/uploads/urunresimleri/buyuk/turk-kahvesi-250-gr-85e-8b.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Klasik Türk Kahvesi 250 Gr</h3>
+                <h4 class="product-old-price">₺75,00</h4>
+                <h4 class="product-price">₺69,00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3.3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-3" class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%4</span>
+                <img
+                  src="https://static.ticimax.cloud/43426/uploads/urunresimleri/buyuk/filtre-kahve-250-gr-9e6fa6.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Filtre Kahve 250 Gr</h3>
+                <h4 class="product-old-price">₺90,00</h4>
+                <h4 class="product-price">₺86,00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3.4 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="single-product product-shadow">
+              <div class="part-1 favori">
+                <span class="discount">%13</span>
+                <img
+                  src="https://static.ticimax.cloud/43426/uploads/urunresimleri/buyuk/damla-sakizli-turk-kahvesi-250gr-e620a6.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Damla Sakızlı Türk Kahvesi 250Gr</h3>
+                <h4 class="product-old-price">₺85,00</h4>
+                <h4 class="product-price">₺74,00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 4.1 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%26 </span>
+                <img
+                  src="https://static.ticimax.cloud/43426/uploads/urunresimleri/buyuk/bademli-turk-kahvesi-100-gr--01da-.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Bademli Türk Kahvesi 100 Gr</h3>
+                <h4 class="product-old-price">₺35,00</h4>
+                <h4 class="product-price">₺26,00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 4.2 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%26</span>
+                <img
+                  src="https://static.ticimax.cloud/43426/uploads/urunresimleri/buyuk/bogurtlenli-turk-kahvesi-100-gr-299-aa.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Böğürtlenli Türk Kahvesi 100 Gr</h3>
+                <h4 class="product-old-price">₺35,00</h4>
+                <h4 class="product-price">₺26,00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 4.3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%17</span>
+                <img
+                  src="https://static.ticimax.cloud/43426/uploads/urunresimleri/buyuk/findikli-turk-kahvesi-100-gr-507315.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+
+              <div class="part-2">
+                <h3 class="product-title">Fındıklı Türk Kahvesi 100 Gr</h3>
+                <h4 class="product-old-price">₺35,00</h4>
+                <h4 class="product-price">₺29,00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 4.4 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%10</span>
+                <img
+                  src="https://static.ticimax.cloud/43426/uploads/urunresimleri/buyuk/bademli-turk-kahvesi-250-gr--46fc-.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Bademli Türk Kahvesi 250 gr</h3>
+                <h4 class="product-old-price">₺80,00</h4>
+                <h4 class="product-price">₺72,00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 5.1 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%10</span>
+                <img
+                  src="https://static.ticimax.cloud/43426/uploads/urunresimleri/buyuk/bogurtlenli-turk-kahvesi-250-gr-75b2db.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Böğürtlenli Türk Kahvesi 250 Gr</h3>
+                <h4 class="product-old-price">₺80,00</h4>
+                <h4 class="product-price">₺72,00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 5.2 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%10</span>
+                <img
+                  src="https://static.ticimax.cloud/43426/uploads/urunresimleri/buyuk/findikli-turk-kahvesi-250-gr-43e5-a.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Fındıklı Türk Kahvesi 250 Gr</h3>
+                <h4 class="product-old-price">₺80,00</h4>
+                <h4 class="product-price">₺72,00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 5.3 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%43</span>
+                <span class="new2">Yeni </span>
+                <img
+                  src="https://static.ticimax.cloud/43426/uploads/urunresimleri/buyuk/kahve-diyari-klasik-turk-kahvesi-100-g-c-4b92.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Klasik Türk Kahvesi 100 gr</h3>
+                <h4 class="product-old-price">₺35,00</h4>
+                <h4 class="product-price">₺19,90</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 5.4 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%24</span>
+                <span class="new2">Yeni </span>
+                <img
+                  src="https://static.ticimax.cloud/43426/uploads/urunresimleri/buyuk/klasik-turk-kahvesi-3-adet-x-100-gr-a4c15a.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  Klasik Türk Kahvesi 3 Adet x 100 gr
+                </h3>
+                <h4 class="product-old-price">₺85,00</h4>
+                <h4 class="product-price">₺64,90</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Product 6.1 -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="single-product product-shadow">
+              <div class="part-1">
+                <span class="discount">%5</span>
+                <img
+                  src="https://static.ticimax.cloud/43426/Uploads/UrunResimleri/thumb/klasik-turk-kahvesi-24-adex-x-100-gr-d6-c9b.jpg"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  Klasik Türk Kahvesi 24 Adex x 100 gr
+                </h3>
+                <h4 class="product-old-price">₺450,00</h4>
+                <h4 class="product-price">₺429,00</h4>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="./bootstrap.bundle.js"></script>
+    </section>
+
+    <!-- FOOTER BAŞLANGIÇ -->
+    <footer>
+      <div class="footer-top">
+        <div
+          class="container-fluid d-flex px-0 justify-content-center flex-column align-items-center"
+        >
+          <div class="footer-logo divider h-100">
+            <img
+              src="https://static.ticimax.cloud/43426/uploads/editoruploads/bdlogo-01.jpg"
+              alt="Footer Logo"
+            />
+          </div>
+          <div class="mobile-apps my-5 d-flex align-items-center gap-4">
+            <span class="mx-2 d-flex align-items-center gap-2"
+              ><strong>Bizi Takip Edin</strong
+              ><a href="https://www.instagram.com/kahvediyariofficial/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </span>
+            <span class="mx-2"
+              ><strong>Mobil Uygulamamız Yakında</strong>
+            </span>
+            <a href="#" class="d-flex align-items-center"
+              ><i class="fab fa-apple"></i></a
+            ><a href="#"
+              ><i class="fab fa-google-play" style="font-size: small"></i
+            ></a>
+          </div>
+        </div>
+        <div class="container-fluid footerBg py-5">
+          <div class="container d-flex flex-row footer-middle">
+            <ul class="w-100">
+              <span class="footerMenuBaslik text-uppercase d-block"
+                >Popüler Katergoriler</span
+              >
+              <li><a href="#">Kahve</a></li>
+              <li><a href="#">Fit Lezzetler</a></li>
+              <li><a href="#">Tatlılar</a></li>
+              <li><a href="#">Hediyelik Ürün</a></li>
+            </ul>
+
+            <ul class="w-100">
+              <span class="footerMenuBaslik text-uppercase d-block"
+                >Alışveriş</span
+              >
+              <li><a href="#">Siparişlerim</a></li>
+              <li><a href="#">Sepetim</a></li>
+              <li><a href="#">İade Taleplerim</a></li>
+              <li><a href="#">Hesabım</a></li>
+            </ul>
+            <ul class="w-100">
+              <span class="footerMenuBaslik text-uppercase d-block"
+                >Müşteri</span
+              >
+              <li><a href="#">Sıkça Sorulan Sorular</a></li>
+              <li><a href="#">İptal ve İade Koşulları</a></li>
+              <li><a href="#">KVKK Aydınlatma Metni</a></li>
+              <li><a href="#">Mesafeli Satış Sözleşmesi</a></li>
+            </ul>
+            <ul class="w-100">
+              <span class="footerMenuBaslik text-uppercase d-block"
+                >Kurumsal</span
+              >
+              <li><a href="#">Hakkında</a></li>
+              <li><a href="#">İletişim</a></li>
+            </ul>
+            <div class="w-100 ebulten flex-grow-2">
+              <span class="footerMenuBaslik text-uppercase d-block"
+                >E-BÜLTEN KAYIT</span
+              >
+              <span class="ebultenYazi"
+                >Kampanyalarımızdan ve indirimlerimizden güncel olarak haberdar
+                olun</span
+              >
+              <div class="mt-3 position-relative">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="E-posta adresinizi yazın.."
+                />
+                <a href="" class="btn ebultenBtn">Gönder</a>
+              </div>
+              <div class="copy">
+                <span>© 2021 Benimdiyarim.com - Tüm hakları saklıdır</span>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid footer-bottom">
+            <div
+              class="container d-flex border-resim px-0 justify-content-between py-5 mt-5"
+            >
+              <img
+                src="https://cdn.ticimax.com/Uploads/hazirSablonResimleri/footerImg/bankimg14.png"
+                alt="Credit Card"
+              />
+              <img
+                id="img2"
+                src="https://static.ticimax.cloud/43426/uploads/editoruploads/kg-grubu-markasi-01.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="ticimax">
+          <a target="_blank" href="https://www.ticimax.com">
+            <img
+              src="https://www.benimdiyarim.com/Scripts/images/logo-60x20px.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
