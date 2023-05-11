@@ -358,3 +358,17 @@ input:focus {
 }
 
 /* bitis kahve kismi css*/
+.responsive-img {
+  max-width: 100%;
+  max-height: 300px;
+  vertical-align: bottom;
+  border-style: none;
+}
+#fixedbutton {
+  height: 30%;
+  position: fixed;
+  z-index: 1;
+  top: 350px;
+  bottom: 0;
+  right: 0;
+}

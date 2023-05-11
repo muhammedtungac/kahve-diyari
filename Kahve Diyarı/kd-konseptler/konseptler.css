@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Vag, serif;
+  font-family: Vagkalin, serif;
 }
 
 .arkaplan1 {
@@ -171,7 +171,7 @@
   margin-top: -60px;
 }
 .yazi {
-  font-family: Vag_ince, serif;
+  font-family: Vagince, serif;
   color: #06514d !important;
   background-color: #f0efeb !important;
   padding: 60px 40px 40px 60px;
@@ -179,7 +179,7 @@
 .yazi1 {
   font-size: 34px;
   background-color: #f0efeb;
-  font-family: Vag, serif !important;
+  font-family: Vagkalin, serif !important;
 }
 .yazi2 {
   color: #d98833 !important;
@@ -192,7 +192,7 @@
   color: #06514d;
 }
 #alanyazi {
-  font-family: Vag_ince !important;
+  font-family: Vagince !important;
   padding: 10px 10px;
 }
 .button {
@@ -215,7 +215,7 @@
   text-align: center !important;
   line-height: 20px;
 
-  font-family: Vag, serif;
+  font-family: Vagkalin, serif;
 
   cursor: pointer;
 }
@@ -226,14 +226,14 @@
   opacity: 1;
   font-weight: lighter !important;
   font-size: 14.5px !important;
-  font-family: Vag_ince !important;
+  font-family: Vagince !important;
 }
 .form-control::placeholder {
   background-color: #f0efeb;
   opacity: 1;
   font-weight: lighter !important;
   font-size: 14.5px !important;
-  font-family: Vag_ince !important;
+  font-family: Vagince !important;
 }
 input {
   border: none !important;
@@ -289,7 +289,7 @@ input:focus {
 .menü-yazi {
   font-weight: 500 !important;
   font-size: 30px !important;
-  font-family: Vag !important;
+  font-family: Vagkalin !important;
   /* margin-right: 20px; */
 }
 
@@ -303,7 +303,7 @@ input:focus {
   color: #06514d !important;
   font-size: 18px;
   font-weight: 100 !important;
-  font-family: VagLight;
+  font-family: Vagince;
 }
 
 .logo_alan {
@@ -340,11 +340,11 @@ input:focus {
   color: #06514d;
   font-size: 18px;
   font-weight: 100;
-  font-family: VagLight !important;
+  font-family: Vagince !important;
 }
 
 .footerr h3 {
-  font-family: Vag !important;
+  font-family: Vagkalin !important;
   font-weight: 900;
   color: white;
 }
@@ -367,16 +367,16 @@ input:focus {
   justify-content: start !important;
   align-items: end !important;
   color: white;
-  font-family: VagLight;
+  font-family: Vagince;
   font-size: 18px;
 }
 
 .numara {
   justify-content: left;
-  font-family: Vag !important;
+  font-family: Vagkalin !important;
   font-weight: 900 !important;
   color: white !important;
-  font-family: VagLight !important;
+  font-family: Vagince !important;
 }
 
 .sol {
@@ -390,7 +390,7 @@ input:focus {
   padding: 15px 65px;
   color: white !important;
   font-size: 25px;
-  font-family: Vag, serif;
+  font-family: Vagkalin, serif;
   font-weight: 1000;
   font: bold;
   background-color: #dd8c33;
@@ -414,7 +414,7 @@ input:focus {
 .orta {
   display: flex;
   justify-content: left !important;
-  font-family: Vag !important;
+  font-family: Vagkalin !important;
   font-weight: 1000;
   color: white;
   font-size: 25px;
@@ -450,7 +450,7 @@ h3 {
 
 .sag {
   justify-content: left !important;
-  font-family: Vag !important;
+  font-family: Vagkalin !important;
   font-weight: 1000;
   color: white;
   font-size: 20px;
@@ -460,7 +460,7 @@ h3 {
 .yakinda {
   color: #dd8c33;
   font-weight: bold;
-  font-family: Vag !important;
+  font-family: Vagkalin !important;
   margin-top: 10px;
   text-align: center;
 }
@@ -476,4 +476,18 @@ h3 {
 
 .logo {
   margin: 5px;
+}
+.responsive-img {
+  max-width: 100%;
+  max-height: 300px;
+  vertical-align: bottom;
+  border-style: none;
+}
+#fixedbutton {
+  height: 30%;
+  position: fixed;
+  z-index: 1;
+  top: 350px;
+  bottom: 0;
+  right: 0;
 }
